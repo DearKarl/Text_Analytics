@@ -1,6 +1,5 @@
 # Climate-related Topic Modelling & Twitter NER
-
-### Topic modelling and embedding-based clustering on ClimateBERT texts, and feature-based vs neural sequence tagging for Twitter NER
+### ClimateBERT topic modelling with embeddings and Twitter named entity recognition using CRF and BERT
 
 This repository implements two complementary NLP pipelines:  
 
@@ -15,7 +14,6 @@ Climate disclosures and social media data present distinct challenges: domain-sp
 - **For climate texts**, word co-occurrence via Latent Dirichlet Allocation (LDA) provides interpretable topic structures but struggles to map directly to semantic classes like *risk* vs *opportunity*. Embedding-based clustering with SentenceTransformers addresses this by leveraging contextual meaning, and semantic anchors enable consistent topic labelling.  
 - **For Twitter NER**, CRF models remain strong baselines when enhanced with lexical, POS, and Twitter-specific features, while transformer models (BERT) provide superior contextual understanding. By comparing both approaches, we reveal trade-offs in robustness and generalisation across noisy, user-generated text.  
 
----
 
 ## Project Goals  
 
@@ -35,7 +33,6 @@ Climate disclosures and social media data present distinct challenges: domain-sp
   - Evaluate models with seqeval precision/recall/F1 (micro, macro, weighted averages).  
   - Analyse top error transitions and show token-level comparisons across models.  
 
----
 
 ## Methods Overview  
 
@@ -58,24 +55,12 @@ Climate disclosures and social media data present distinct challenges: domain-sp
 - **Evaluation**: micro-averaged precision, recall, F1; per-entity reports; confusion heatmaps.  
 - **Error analysis**: transition error distributions, mismatch case studies, and side-by-side token tables.  
 
----
-
-## Highlights  
-
-- **Reproducible environment**: automatic idempotent setup with pinned versions (Torch 2.3.1, Transformers 4.41.1, SentenceTransformers 2.7.0).  
-- **Dual perspective on climate texts**: LDA co-occurrence vs embedding-based semantic clustering, unified by anchor-based labelling.  
-- **Interactive outputs**: pyLDAvis HTML for topic exploration, UMAP scatter plots for embedding clusters.  
-- **Systematic NER comparison**: step-wise CRF baselines vs fine-tuned BERT, with detailed error profiling.  
-- **Rich evaluation toolkit**: micro/macro/weighted averages, per-entity metrics, error transition charts, token-level comparisons.  
-
----
 
 ## Data Sources  
 
 - **ClimateBERT Sentiment**: [Hugging Face – climatebert/climate_sentiment](https://huggingface.co/datasets/climatebert/climate_sentiment)  
 - **Broad Twitter Corpus (BTC)**: [Hugging Face – tner/btc](https://huggingface.co/datasets/tner/btc)  
 
----
 
 ## References  
 
@@ -89,4 +74,3 @@ Climate disclosures and social media data present distinct challenges: domain-sp
 ---
 
 > Repository maintained by [DearKarl](https://github.com/DearKarl). Contributions and feedback welcome.  
-
