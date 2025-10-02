@@ -1,4 +1,4 @@
-# Climate-related Topic Modelling & Twitter NER
+# Natural Language Processing for Climate-related Text Analysis
 
 Latent topic discovery using LDA and sentence embeddings on ClimateBERT, and named entity recognition on Twitter using CRF baselines and a fine-tuned BERT model
 
@@ -42,8 +42,7 @@ The analysis of climate-related texts requires methods capable of handling both 
 - **LDA**: scikit-learn (5/10 topics) and Gensim (BoW and TF-IDF), visualised with pyLDAvis.  
 - **Semantic classification**: SentenceTransformer embeddings compared to risk/opportunity anchors.  
 - **Clustering**: MiniLM embeddings → K-Means (k=5) → semantic labelling by anchor similarity.  
-- **Visualisation**: UMAP 2D projection with cluster colouring.
-- 
+
 2) **Twitter NER**  
 
 - **Dataset**: Broad Twitter Corpus (BTC) from the TNER benchmark.  
