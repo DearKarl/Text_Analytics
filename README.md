@@ -10,8 +10,6 @@ This project develops two complementary natural language processing (NLP) pipeli
 
 2) **Twitter NER:** feature-engineered Conditional Random Field (CRF) models and a fine-tuned BERT token classifier are applied to the Broad Twitter Corpus (BTC). Evaluation with **seqeval** (micro, macro, and weighted averages) is complemented by error-transition analysis, confusion heatmaps, and token-level comparisons.  
 
-Together, these pipelines integrate classical machine learning and deep learning to advance the study of climate-related discourse.
-
 ## Background  
 
 The analysis of climate-related texts requires methods capable of handling both the specialised language of corporate reports and the noisy, informal style of social media. Traditional approaches such as LDA and CRF provide interpretable baselines for topic discovery and sequence labelling, but they are limited in capturing higher-level semantics and robustness on noisy data. Deep learning methods, including SentenceTransformers for embedding-based clustering and BERT for token classification, offer richer contextual representation and improved generalisation. This project combines these complementary approaches to examine how climate-related risks and opportunities are expressed across formal disclosures and user-generated content.  
