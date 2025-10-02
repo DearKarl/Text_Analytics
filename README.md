@@ -1,4 +1,4 @@
-# Natural Language Processing for Climate-related Text Analysis
+# NLP for Climate-related Text Analysis
 
 Latent topic discovery using LDA and sentence embeddings on ClimateBERT, and named entity recognition on Twitter using CRF baselines and a fine-tuned BERT model
 
