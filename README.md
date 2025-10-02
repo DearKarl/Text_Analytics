@@ -1,11 +1,10 @@
 # Climate-related Topic Modelling & Twitter NER
-### ClimateBERT topic modelling with embeddings and Twitter named entity recognition using CRF and BERT
 
-This repository implements two complementary NLP pipelines:  
+ClimateBERT topic modelling with embeddings and Twitter named entity recognition using CRF and BERT
 
-1. **Climate-related topic modelling and semantic clustering** on the ClimateBERT sentiment dataset, combining traditional LDA with modern embedding-based methods to uncover themes of *climate risk* and *climate opportunity*.  
-2. **Named Entity Recognition (NER) on Twitter text**, comparing three feature-engineered Conditional Random Field (CRF) baselines with a fine-tuned BERT token classification model, evaluated with entity-level metrics and error analysis.  
+## Project Overview
 
+This project develops two complementary natural language processing pipelines to analyse climate-related text. The first focuses on topic modelling of climate disclosures using the ClimateBERT sentiment dataset, aiming to uncover recurring themes of climate risk and climate opportunity. The second addresses named entity recognition on noisy, user-generated Twitter data, comparing feature-engineered Conditional Random Field models with a fine-tuned BERT token classifier. By combining topic discovery in formal climate texts with entity extraction in social media streams, the project illustrates how different NLP methods can jointly support the understanding of climate communication across domains.
 
 ## Background  
 
