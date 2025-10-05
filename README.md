@@ -6,7 +6,7 @@ Latent topic discovery using LDA and sentence embeddings on ClimateBERT, and nam
 
 This project develops two complementary natural language processing (NLP) pipelines for analysing climate-related communication across formal disclosures and social media.  
 
-1) **Climate Topic Modelling:** the **ClimateBERT** sentiment corpus is preprocessed and analysed using Latent Dirichlet Allocation (LDA) and embedding-based clustering (SentenceTransformers + K-Means). Topics and clusters are semantically classified as *risk* or *opportunity* via cosine similarity to anchor sentences, and results are visualised with pyLDAvis and UMAP.  
+1) **Climate Topic Modelling** the **ClimateBERT** sentiment corpus is preprocessed and analysed using Latent Dirichlet Allocation (LDA) and embedding-based clustering (SentenceTransformers + K-Means). Topics and clusters are semantically classified as *risk* or *opportunity* via cosine similarity to anchor sentences, and results are visualised with pyLDAvis and UMAP.  
 
 2) **Twitter NER:** feature-engineered Conditional Random Field (CRF) models and a fine-tuned BERT token classifier are applied to the Broad Twitter Corpus (BTC). Evaluation with **seqeval** (micro, macro, and weighted averages) is complemented by error-transition analysis, confusion heatmaps, and token-level comparisons.  
 
@@ -37,9 +37,9 @@ The analysis of climate-related texts requires methods capable of handling both 
 1) **ClimateBERT Topic Modelling**  
 
 - **Preprocessing:** lowercasing, tokenisation, stopword removal, WordNet lemmatisation.  
-- **LDA**: scikit-learn (5/10 topics) and Gensim (BoW and TF-IDF), visualised with pyLDAvis.  
-- **Semantic classification**: SentenceTransformer embeddings compared to risk/opportunity anchors.  
-- **Clustering**: MiniLM embeddings → K-Means (k=5) → semantic labelling by anchor similarity.  
+- **LDA:** scikit-learn (5/10 topics) and Gensim (BoW and TF-IDF), visualised with pyLDAvis.  
+- **Semantic classification:** SentenceTransformer embeddings compared to risk/opportunity anchors.  
+- **Clustering:** MiniLM embeddings → K-Means (k=5) → semantic labelling by anchor similarity.  
 
 2) **Twitter NER**  
 
