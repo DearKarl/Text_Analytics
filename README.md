@@ -36,26 +36,26 @@ The analysis of climate-related texts requires methods capable of handling both 
 
 1) **ClimateBERT Topic Modelling**  
 
-- **Preprocessing**: lowercasing, tokenisation, stopword removal, WordNet lemmatisation.  
+- **Preprocessing:** lowercasing, tokenisation, stopword removal, WordNet lemmatisation.  
 - **LDA**: scikit-learn (5/10 topics) and Gensim (BoW and TF-IDF), visualised with pyLDAvis.  
 - **Semantic classification**: SentenceTransformer embeddings compared to risk/opportunity anchors.  
 - **Clustering**: MiniLM embeddings → K-Means (k=5) → semantic labelling by anchor similarity.  
 
 2) **Twitter NER**  
 
-- **Dataset**: Broad Twitter Corpus (BTC) from the TNER benchmark.  
-- **Models**:  
+- **Dataset:** Broad Twitter Corpus (BTC) from the TNER benchmark.  
+- **Models:**  
   - CRF-1: lexical/orthographic features,  
   - CRF-2: + POS tags,  
   - CRF-3: + Twitter-specific cues,  
   - BERT: bert-base-cased fine-tuned with Hugging Face Trainer.  
-- **Evaluation**: micro/macro/weighted precision, recall, F1; per-entity reports; confusion heatmaps.  
-- **Error analysis**: transition error distributions, mismatch case studies, and side-by-side token comparisons.  
+- **Evaluation:** micro/macro/weighted precision, recall, F1; per-entity reports; confusion heatmaps.  
+- **Error analysis:** transition error distributions, mismatch case studies, and side-by-side token comparisons.  
 
 ## Data Sources  
 
-- **ClimateBERT Sentiment**: [Hugging Face – climatebert/climate_sentiment](https://huggingface.co/datasets/climatebert/climate_sentiment)  
-- **Broad Twitter Corpus (BTC)**: [Hugging Face – tner/btc](https://huggingface.co/datasets/tner/btc)  
+- **ClimateBERT Sentiment:** [Hugging Face – climatebert/climate_sentiment](https://huggingface.co/datasets/climatebert/climate_sentiment)  
+- **Broad Twitter Corpus (BTC):** [Hugging Face – tner/btc](https://huggingface.co/datasets/tner/btc)  
 
 ## References  
 
