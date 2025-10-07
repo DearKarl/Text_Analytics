@@ -21,7 +21,7 @@ The analysis of climate-related texts requires methods capable of handling both 
   - Apply LDA with Count and TF-IDF vectorisation (5/10 topics).  
   - Map topics to semantic classes via cosine similarity to anchor sentences.  
   - Cluster documents using transformer embeddings (MiniLM) with K-Means, and visualise with UMAP.  
-  - Generate interactive pyLDAvis HTML outputs for exploration.  
+  - Generate interactive pyLDAvis HTML outputs for visualisation.  
 
 2) **Twitter NER**  
   - Implement CRF baseline models.  
