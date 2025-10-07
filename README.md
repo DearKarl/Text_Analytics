@@ -24,10 +24,7 @@ The analysis of climate-related texts requires methods capable of handling both 
   - Generate interactive pyLDAvis HTML outputs for exploration.  
 
 2) **Twitter NER**  
-  - Implement three CRF baselines:  
-    - CRF-1: lexical features,  
-    - CRF-2: lexical + POS tags,  
-    - CRF-3: lexical + POS + Twitter-specific cues (@mentions, #hashtags, URLs).  
+  - Implement CRF baseline models.  
   - Fine-tune BERT for token-level classification with subword alignment.  
   - Evaluate using seqeval precision, recall, and F1 (micro, macro, weighted).  
   - Perform error analysis with transition statistics and token-level comparisons.  
